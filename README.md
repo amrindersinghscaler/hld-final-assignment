@@ -5,6 +5,8 @@ distributed in-memory cache fronting a SQLite primary store, consistent
 hashing for cache routing, recency-aware ranking, and batched writes so the
 DB is hit ~10× less than naïve.
 
+**Demo video:** https://drive.google.com/file/d/1w0As8il9-vLS0PdaaJS6GsOrPJaUNMXE/view?usp=sharing
+
 ```
                 ┌────────────────────────────────┐
    browser ──►  │  Express                       │
