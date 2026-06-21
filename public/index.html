@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Search Typeahead</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Search Typeahead</h1>
+      <p class="sub">prefix suggestions · consistent-hashed cache · batched writes</p>
+    </header>
+
+    <section class="search">
+      <form id="form" autocomplete="off" role="search">
+        <input id="q" type="text" placeholder="start typing… try “re”, “sys”, “ipho”" aria-label="Search" />
+        <button type="submit">Search</button>
+      </form>
+      <div id="dropdown" class="dropdown" hidden role="listbox" aria-label="Suggestions"></div>
+      <div id="meta" class="meta"></div>
+    </section>
+
+    <section id="result" class="result" hidden></section>
+
+    <section class="trending">
+      <h2>Trending now</h2>
+      <ol id="trending"></ol>
+      <button id="refreshTrending" class="ghost">refresh</button>
+    </section>
+
+    <section class="stats">
+      <h2>Live stats</h2>
+      <pre id="stats">loading…</pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
