@@ -1,0 +1,5 @@
+node_modules/
+data/store.db
+data/store.db-*
+data/queries.csv
+.DS_Store
