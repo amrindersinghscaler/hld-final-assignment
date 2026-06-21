@@ -1,0 +1,15 @@
+{
+  "name": "search-typeahead",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/generate-data.js",
+    "start": "node server/index.js",
+    "bench": "node scripts/benchmark.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.21.1"
+  }
+}
